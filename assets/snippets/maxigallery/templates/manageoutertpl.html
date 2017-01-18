@@ -12,10 +12,10 @@
 		<form action="[+maxigallery.urlaction+]" method="post" name="editform" id="editform">
 			[+maxigallery.hiddenfields.mainform+]
 	
-			<input type="button" value="[+maxigallery.strings.back_to_normal_view+]" onclick="location.href='[+maxigallery.urlback+]'"/>
-			<input type="submit" value="[+maxigallery.strings.save_changes+]" />
-			<input type="button" value="[+maxigallery.strings.sort_pictures+]" id="dragButton" onclick="openDragWin('[+maxigallery.urldragsort+]', 600, 500)" />
-	
+			<span class="actionButtons"><input type="button" value="[+maxigallery.strings.back_to_normal_view+]" onclick="location.href='[+maxigallery.urlback+]'"/>
+			<input class="primary" type="submit" value="[+maxigallery.strings.save_changes+]" />
+			<input type="button" value="[+maxigallery.strings.sort_pictures+]" id="dragButton" onclick="openDragWin('[+maxigallery.urldragsort+]', 800, 600)" />
+            </span>
 			<br /><br />
 			<a href="[+maxigallery.urlaction+]#uploadform">[+maxigallery.strings.jump_to_upload_form+]</a>
 			<br /><br />
@@ -40,22 +40,23 @@
 				[+maxigallery.uploadpictures+]
 	
 				<br class="clearboth" />
-	
-				<input type="submit" value="[+maxigallery.strings.upload_pictures+]" />
+	<span class="synchform actionButtons">
+				<input class="primary" type="submit" value="[+maxigallery.strings.upload_pictures+]" />
+                </span>
 			</form>
 		`+]
 	</div>
 	<br class="clearboth" />
 	<hr />
 	
-	<div class="deleteform">
+	<div class="deleteform actionButtons">
 		<form action="[+maxigallery.urlaction+]" method="post" name="deleteform">
 			[+maxigallery.hiddenfields.deleteform+]
 			<input type="submit" value="[+maxigallery.strings.delete_all_pictures+]" onClick="return confirm('[+maxigallery.strings.delete_all_confirmation+]')" />
 		</form>
 	</div>
 	
-	<div class="synchform">
+	<div class="synchform actionButtons">
     	<form action="[+maxigallery.urlaction+]" method="post" name="synchform">
 			<input type="hidden" name="action" value="gallery_synch" /><input type="hidden" name="mode" value="admin" />
             <input type="submit" value="[+maxigallery.strings.resynch+]" />

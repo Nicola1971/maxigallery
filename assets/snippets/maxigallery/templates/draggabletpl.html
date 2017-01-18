@@ -21,7 +21,8 @@ p {
 }
 </style>
 <link rel="stylesheet" type="text/css" href="[(base_url)]manager/media/style/MODxRE2/style.css" />
-<link rel="stylesheet" type="text/css" href="[(base_url)]assets/site/css/site.css" />
+<link rel="stylesheet" type="text/css" href="[(base_url)]assets/snippets/maxigallery/css/default.css" />
+<link rel="stylesheet" href="[(base_url)]manager/media/style/common/font-awesome/css/font-awesome.min.css" />
 <!-- This will work with Scriptaculous or mootools. Select either prototype.js + scriptaculous.js, OR mootools. The mootools version doesn't work with IE7 for some reason... -->
 <!--script src="[(base_url)][+maxigallery.path+]js/mooSortables.js" type="text/javascript"> </script-->
 <script src="[(base_url)][+maxigallery.path+]js/prototype.js" type="text/javascript"> </script>
@@ -73,7 +74,14 @@ p {
 	 </script>
 </head>
 <body onload="loadPics()">
-<div class="sectionHeader">Sort images</div>
+    <h1 class="pagetitle">
+  <span class="pagetitle-icon">
+    <i class="fa fa-arrows"></i>
+  </span>
+  <span class="pagetitle-text">
+    Sort images
+  </span>
+</h1>
 <div class="sectionBody">
   <div id="mgNav">
     <ul class="actionButtons">
@@ -81,10 +89,12 @@ p {
       <li><a href="javascript: void(0)" onClick="javascript:self.close();" title="[+maxigallery.strings.cancel+]"><span>[+maxigallery.strings.cancel+]</span></a></li>
     </ul>
   </div>
+   <div class="tab-page drag-page">
   <p>[+maxigallery.strings.dragdesc+]</p>
   <form id="dragform" action="#">
   </form>
   <p class="actionButtons"><a href="" onclick="window.scrollTo(0,0);return false;">[+maxigallery.strings.back_to_top+]</a></p>
+</div>
 </div>
 </body>
 </html>
