@@ -20,7 +20,7 @@ p {
 	margin: 1em 0 1em 0 !important;
 }
 </style>
-<link rel="stylesheet" type="text/css" href="[(base_url)]manager/media/style/MODxRE2/style.css" />
+<link rel="stylesheet" type="text/css" href="[(base_url)]manager/media/style/default/style.css" />
 <link rel="stylesheet" type="text/css" href="[(base_url)]assets/snippets/maxigallery/css/default.css" />
 <link rel="stylesheet" href="[(base_url)]manager/media/style/common/font-awesome/css/font-awesome.min.css" />
 <!-- This will work with Scriptaculous or mootools. Select either prototype.js + scriptaculous.js, OR mootools. The mootools version doesn't work with IE7 for some reason... -->
@@ -84,16 +84,16 @@ p {
 </h1>
 <div class="sectionBody">
   <div id="mgNav">
-    <ul class="actionButtons">
-      <li><a class="primary" href="javascript: void(0)" onClick="javascript:opener.handleSubmit(serializeList());" title="[+maxigallery.strings.save_changes+]"><span>[+maxigallery.strings.save_changes+]</span></a></li>
-      <li><a href="javascript: void(0)" onClick="javascript:self.close();" title="[+maxigallery.strings.cancel+]"><span>[+maxigallery.strings.cancel+]</span></a></li>
-    </ul>
+    <div class="actions" style="padding:5px">
+      <a class="btn btn-primary" href="javascript: void(0)" onClick="javascript:opener.handleSubmit(serializeList());" title="[+maxigallery.strings.save_changes+]"><span>[+maxigallery.strings.save_changes+]</span></a>
+      <a class="btn btn-danger" href="javascript: void(0)" onClick="javascript:self.close();" title="[+maxigallery.strings.cancel+]"><span>[+maxigallery.strings.cancel+]</span></a>
+    </div>
   </div>
-   <div class="tab-page drag-page">
+   <div class="tab-page drag-page" style="padding:5px">
   <p>[+maxigallery.strings.dragdesc+]</p>
   <form id="dragform" action="#">
   </form>
-  <p class="actionButtons"><a href="" onclick="window.scrollTo(0,0);return false;">[+maxigallery.strings.back_to_top+]</a></p>
+  <p class="actionButtons"><a class="btn" href="" onclick="window.scrollTo(0,0);return false;">[+maxigallery.strings.back_to_top+]</a></p>
 </div>
 </div>
 </body>
